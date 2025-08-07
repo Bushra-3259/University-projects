@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadlock Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🧠 Deadlock Detector - Banker's Algorithm</h1>
+    <label for="processes">Number of Processes:</label>
+    <input type="number" id="processes" min="1">
+
+    <label for="resources">Number of Resources:</label>
+    <input type="number" id="resources" min="1">
+
+    <button class="btn" onclick="generateTables()">Create Matrices</button>
+
+    <form id="matrixForm" style="display:none;">
+        <div id="tablesContainer"></div>
+        <button class="btn" type="submit">Check Safety</button>
+    </form>
+
+    <div id="result" class="result"></div>
+</div>
+
+<div id="modal">
+    <div id="modal-content">
+        <h2>🧟 DEADLOCK APOCALYPSE 💀</h2>
+        <p>Processes are now emotionally attached to their resources. Breakups not allowed. 🐣✨.</p>
+        <button class="btn" onclick="closeModal()">Okay! I got it!</button>
+    </div>
+</div>
+
+<audio id="deadlockSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+<script src="code.js"></script>
+</body>
+</html>
